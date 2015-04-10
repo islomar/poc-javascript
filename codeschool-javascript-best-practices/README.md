@@ -56,6 +56,9 @@ The name of the namespace acts as a shield.
 Nested namespacing is frequent in module pattern. Nesting namespaces provide further organization and protection, as well as help keep variable names intuitive.
 
 ##Anonymous closures
+The thing with a namespace is that you have to "hope" that no one else ever uses its name.
+We want to hide "private" properties, wrapping the whole file into an IIFE: Immediately Invoked Function Expression.
+To make some properties public, return an object (see slides).
 
 Bookmark:
 http://campus.codeschool.com/courses/javascript-best-practices/level/4
