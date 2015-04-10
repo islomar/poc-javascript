@@ -46,5 +46,16 @@ function isANumber(data) {
 	return ( typeof data === "number" && !isNaN(data) );
 }
 
+#Level 4: The Mail of Modularity
+
+##Namespacing basics
+Conflicting global elements!!
+variables with same name in different files get overwritten due to hoisting.
+The key to creating a namespace is a single globlal Object, commonly called the "wrapper" for the space (name capitalized entirely).
+The name of the namespace acts as a shield.
+Nested namespacing is frequent in module pattern. Nesting namespaces provide further organization and protection, as well as help keep variable names intuitive.
+
+##Anonymous closures
+
 Bookmark:
 http://campus.codeschool.com/courses/javascript-best-practices/level/4
