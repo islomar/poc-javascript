@@ -1,3 +1,18 @@
+
+#Interesting links
+https://www.codeschool.com/account/courses/javascript-best-practices
+
+Code conventions for JS:
+http://javascript.crockford.com/code.html
+
+45 useful JS tips:
+http://modernweb.com/2013/12/23/45-useful-javascript-tips-tricks-and-best-practices/
+
+#Best Practices
+* Do NOT use eval
+
+
+
 #Level 3: The crystal of caution
 
 ##Careful comparisons
@@ -59,6 +74,19 @@ Nested namespacing is frequent in module pattern. Nesting namespaces provide fur
 The thing with a namespace is that you have to "hope" that no one else ever uses its name.
 We want to hide "private" properties, wrapping the whole file into an IIFE: Immediately Invoked Function Expression.
 To make some properties public, return an object (see slides).
+
+##Global imports
+When non-local variables are referenced in a module, the entire length of the scope chain is checked (besides dangerous, it is slow).
+For clearer, faster global variables in modules, use imports.
+Pass all your globals into your IIFE using the calling parantheses: the function's parameter creates a modifiable value for use in the module, while the global value stays protected if necessary.
+
+##Augmentation
+How to augment the modules.
+No var keyword. We pass in the IIFE as parameter.
+Any new properties will have no access to the private data from the earlier closure. The earlier public properties however will retain the reference.
+Best practice: group file contents around needed data.
+So... you better do NOT augment your modules.
+
 
 Bookmark:
 http://campus.codeschool.com/courses/javascript-best-practices/level/4
