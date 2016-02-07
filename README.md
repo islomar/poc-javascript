@@ -35,7 +35,7 @@ function Shoe(size, color) {
 * We want to hide "private" properties, wrapping the whole file into an IIFE: Immediately Invoked Function Expression.
 To make some properties public, return an object (see slides).
 * TGP-p25
-* JSBP_4-p28
+* JSBP_4-p28-43, 47-58
 
 ##Ideas for Alea:
 * TGP-p25 & JSBP_4-p14: global abatement (avoid collisions with other libraries, applications, widgets, etc.) 
@@ -52,7 +52,9 @@ ALEA.flight = {
 	}
 }
 
+* IIFE
 * Use prototype and inheritance for memory efficiency: page 59 from [JSBP_3](./codeschool-javascript-best-practices/slides/JSBP_4.pdf)
+ * Prototype: TGP-22, 47
 * Invocation patterns:
  * Method invocation pattern
  * Function invocation pattern
@@ -61,12 +63,22 @@ ALEA.flight = {
 * Functions create a new scope: variables declared in a function STAY in a function (Drive-p6)
 * Closures
  * When we return a function from a function, complete with variables which showed up in the external function, we have a closure.
+ * Drive-p8
 * Curry
 * Memoization
  * Functions can use objects to remember the results of previous operations (e.g. fibonacci)
 * Inheritance
  * TGP-p47, 48
+ * HeadFirst: chapter 10
+* Hoisting: program load order
+ * Drive-p10
 * Module pattern:
  * For getting privacy: TGP-p52
+ * The Module pattern is used to further emulate the concept of classes in such a way that we're able to include both public/private methods and variables inside a single object, thus shielding particular parts from the global scope. What this results in is a reduction in the likelihood of our function names conflicting with other functions defined in additional scripts on the page.
+* this vs that
+ * “This” always refers to the owner Object of the function in which the “this” is used.
+ * this inside a function refers to the owner of the function which is called
+ * Drive-p13
 * Tricks:
  * console.time("Total time") - console.timeEnd("Total time")
+ * Load JS in an async way Drive-19
