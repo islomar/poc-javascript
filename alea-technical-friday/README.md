@@ -3,4 +3,19 @@
 ##Summary
 1. Hide and show elements
 2. Global variables
-2. IIFE
+ * Module pattern
+3. IIFE
+4. Inheritance
+ * Prototyping
+5. Memoization
+6. Hoisting
+
+##Bibliography
+* Head First
+
+
+##Training
+Code School
+
+##Links
+Frontazo

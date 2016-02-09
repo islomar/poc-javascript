@@ -1,5 +1,9 @@
 #Playground for JavaScript
 
+* [CodeSchool JavaScript best practices](./codeschool-javascript-best-practices/README.md)
+* [Alea Technical Friday](./alea-technical-friday/README.md)
+
+
 ##My notes
 [https://docs.google.com/document/d/1h-9INBkcZ1GGaDs5x3_XTXGWIq7cKWMPMdjgU6UD_Eo/edit](https://docs.google.com/document/d/1h-9INBkcZ1GGaDs5x3_XTXGWIq7cKWMPMdjgU6UD_Eo/edit)
 
