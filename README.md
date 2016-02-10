@@ -1,4 +1,4 @@
-#Playground for JavaScript
+Playground for JavaScript
 
 * [CodeSchool JavaScript best practices](./codeschool-javascript-best-practices/README.md)
 * [Alea Technical Friday](./alea-technical-friday/README.md)
