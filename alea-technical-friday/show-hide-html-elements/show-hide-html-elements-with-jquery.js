@@ -9,4 +9,8 @@ $(document).ready(function(){
      textToBeShownElement.show();
    });
 
+    $("#toggleButton").click(function(event){
+        textToBeShownElement.toggle();
+    });
+
  });
