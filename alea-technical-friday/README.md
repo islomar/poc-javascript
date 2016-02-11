@@ -9,6 +9,8 @@
 4. Inheritance
  * Prototyping
 5. Memoization
+ * In computing, memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls 
+and returning the cached result when the same inputs occur again.
 6. Hoisting (elevar, alzar, levantar):
  * It is a concept about program load order.
  * Function expressions vs function statements
@@ -19,11 +21,10 @@
  * Function expressions are never hoisted, they are treated as assignments.
 
 ##Bibliography
-* Head First
+* Head First JavaScript
+* JavaScript: The Good Parts (Doublas Crockford)
+* JavaScript Enlightenment (Cody Lindley)
 
 
 ##Training
-Code School
-
-##Links
-Frontazo
+Code School: JavaScript Path
