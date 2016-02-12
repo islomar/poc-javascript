@@ -15,13 +15,16 @@
 * Is a number really a number?
 
 * Global variables
- * Module pattern
 
-* IIFE
- * Inmediately Invoked Function Expression
+* Objects
+ 
+* IIFE: Inmediately Invoked Function Expression
 
-* Inheritance
- * Prototyping
+* Module pattern
+
+* Inheritance and prototyping
+
+* Invocation patterns
 
 
 ##Bibliography
