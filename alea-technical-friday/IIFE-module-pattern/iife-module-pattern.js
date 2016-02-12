@@ -1,13 +1,17 @@
 /**
+ * IIFE: Immediately Invoked Function Expression
+ *
+ * Pass all your globals into your IIFE using the calling parantheses:
+ * the function's parameter creates a modifiable value for use in the module, while the global value stays protected if necessary.
+ */
+
+
+/**
  * MODULE pattern
  *
  * A module is a function or object that presents an interface but that hides its state and implementation.
  * TODO: ver p40-42 TGP
  */
-
-
-
-
 
 
 var explorerAnswer = "agnostic";
@@ -44,3 +48,9 @@ var LEXICALLAKE = function (answer, foundShore) {
 
   };
 }(explorerAnswer, madeItAcross);
+
+
+console.log(LEXICALLAKE);
+
+console.log('LEXICALLAKE.depth: ' + LEXICALLAKE.depth);
+console.log('LEXICALLAKE.getDepth(): ' + LEXICALLAKE.getDepth());
