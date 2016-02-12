@@ -1,5 +1,9 @@
 #Alea's technical Friday: JavaScript
 
+##Slides
+[JavaScript, qué hermoso eres](https://docs.google.com/presentation/d/1ffsKWM-xc0-emQtkBBx_OkESkDj43L4b3q-pr1rnP4Y/edit#slide=id.p)
+
+
 ##Summary
 * Hide and show elements
 
