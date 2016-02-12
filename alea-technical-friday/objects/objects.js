@@ -53,10 +53,10 @@ function Bird() {
 
 // SyntaxBird Inherits From Parent Bird
 function SyntaxBird() {
-    this.xxxx = 66; // 'this' is bound to SyntaxBird object, not to LoopLover
+    this.age = 6; // 'this' is bound to SyntaxBird object, not to LoopLover, that's why loopy.age failed...
 }
 SyntaxBird.prototype = Object.create(Bird.prototype);
-SyntaxBird.prototype.xxxx = 44;
+//SyntaxBird.prototype.age = 4;
 
 var LoopLover = function (birdFood) {
     this.birdFood = birdFood;
@@ -67,10 +67,10 @@ LoopLover.prototype = Object.create(SyntaxBird.prototype);
 // bird variables below inherit from above prototype chain
 var loopy = new LoopLover("loops");
 
-console.log("loopy instanceof Bird: " + (loopy instanceof Bird));
+console.log("loopy instanceof Bird: ", loopy instanceof Bird);
 console.log("loopy instanceof SyntaxBird: " + (loopy instanceof SyntaxBird));
-console.log(loopy);
-console.log(loopy.xxxx);
+console.log("loopy: " + loopy);
+console.log("loopy.age: " + loopy.age); // it looks for age in the LoopLover object and all the prototyp chain (but not in the SyntaxBird object)
 console.log("LoopLover.prototype: " + LoopLover.prototype);
 console.log("LoopLover.prototype: " + LoopLover.prototype);
 console.log("LoopLover.__proto__: " + LoopLover.__proto__);
