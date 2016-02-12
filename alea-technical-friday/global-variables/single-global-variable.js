@@ -1,4 +1,4 @@
-var MYAPP = {};
+var MYAPP = MYAPP || {};
 
 MYAPP.stooge = {
 	"first-name": "Joe",

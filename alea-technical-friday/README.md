@@ -32,6 +32,7 @@
 
 * For the second part:
  * JS is function scope.
+ * var MYAPP = MYAPP || {};
  * Explanation objects.js, line 56 >> what 'this' is bound to, why loopy.xxxx didn't work.
  * IIFE
  * Module pattern
