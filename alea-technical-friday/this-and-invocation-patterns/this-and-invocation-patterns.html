@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="this-and-invocation-patterns.js"></script>
+</head>
+<body>
+<h1>'This' and invocation patterns</h1>
+</body>
+<script>
+    var foo = 'foo';
+    var myObject = {foo: 'I am myObject.foo'};
+
+    var sayFoo = function() {
+        console.log(this['foo']);
+    };
+
+    myObject.sayFoo = sayFoo;
+
+    myObject.sayFoo();  // "I am myObject.foo"  > 'this' refers to myObject
+    sayFoo();           // "foo" > 'this' refers to window
+</script>
+</html>
