@@ -32,7 +32,11 @@
 
 * For the second part:
  * JS is function scope.
- * Explanation objects.js, line 56 >> what 'this' is bound to.
+ * Explanation objects.js, line 56 >> what 'this' is bound to, why loopy.xxxx didn't work.
+ * IIFE
+ * Module pattern
+ * Invocation patterns
+ 
 
 ##Bibliography
 * Head First JavaScript

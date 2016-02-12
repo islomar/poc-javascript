@@ -9,7 +9,6 @@
  * 'this' is a reference to the object of which that function is a property/method
  */
 
-
 /**
  * Method invocation pattern
  * =========================
@@ -18,7 +17,7 @@
  * The binding of 'this' to the object happens at invocation time.
  * Methods that get their object context from 'this' are called public methods.
  */
-
+console.log("--------------------------------------");
 var myObject = {
     value: 0,
     increment: function (inc) {
@@ -39,6 +38,7 @@ console.log("myObject.value after increment(2): " + myObject.value);
  * When a function is invoked with this pattern, 'this' is bound to the global object: this was a mistake in the design of the language.
  *
  */
+console.log("--------------------------------------");
 var add = function (a, b) {
     return a + b;
 };
@@ -59,7 +59,6 @@ myObject.double = function () {
 myObject.double();
 console.log("myObject.value after double(): " + myObject.value);
 
-
 /**
  * Constructor invocation pattern
  * ==============================
@@ -70,6 +69,7 @@ console.log("myObject.value after double(): " + myObject.value);
  * and 'this' will be bound to that new object.
  * The 'new' prefix also changes the behavior of the return statement.
  */
+console.log("--------------------------------------");
 var Quo = function (string) {
     this.status = string;  // 'this' is bound to the new object (neither to the caller -method invocation- nor the the global object -function invocation)
 };
@@ -90,7 +90,8 @@ console.log("myQuo.get_status(): " + myQuo.get_status());
  * It also lets us choose the value of 'this'.
  * The 'apply' method takes two parameters: the first is the value that should be bound to 'this'. The second is an array of parameters.
  */
-var array = [3,4];
+console.log("--------------------------------------");
+var array = [3, 4];
 var sum = add.apply(null, array); //sum is 7
 
 var statusObject = {
@@ -99,10 +100,10 @@ var statusObject = {
 var status = Quo.prototype.get_status.apply(statusObject);
 console.log("status: " + status);
 
-
 /**
  * Nested functions (review)
  */
+console.log("--------------------------------------");
 var myNestedFunctionsObject = {
     func1: function () {
         console.log(this); // logs myNestedFunctionsObject
@@ -116,3 +117,37 @@ var myNestedFunctionsObject = {
 };
 myNestedFunctionsObject.func1();
 
+/**
+ * Example with two different 'this' bindings
+ */
+console.log("--------------------------------------");
+var foo = 'foo';
+var myObject = {
+    foo: 'I am myObject.foo'
+};
+
+var sayFoo = function () {
+    console.log(this['foo']);
+};
+
+myObject.sayFoo = sayFoo;
+
+myObject.sayFoo();  // "I am myObject.foo"  > 'this' refers to myObject
+sayFoo();           // "foo" > 'this' refers to window
+
+
+/**
+ * Borillo's example
+ *
+ */
+console.log("--------------------------------------");
+var point = {
+    x: 10,
+    y: 20,
+    show: function () {
+        console.log(this.x, this.y);
+    }
+};
+var myShow = point.show;
+myShow(); //fail!!          >>> undefined undefined
+point.show();  //works!!    >>> 10 20
