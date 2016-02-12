@@ -11,6 +11,9 @@
  *
  * A module is a function or object that presents an interface but that hides its state and implementation.
  * TODO: ver p40-42 TGP
+ *
+ * Ventajas: no se usa el new ni el this (desaconsejado por Crockford en TGP)
+ *
  */
 
 
@@ -48,7 +51,6 @@ var LEXICALLAKE = function (answer, foundShore) {
 
   };
 }(explorerAnswer, madeItAcross);
-
 
 console.log(LEXICALLAKE);
 
