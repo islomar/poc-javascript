@@ -149,5 +149,9 @@ var point = {
     }
 };
 var myShow = point.show;
-myShow(); //fail!!          >>> undefined undefined
-point.show();  //works!!    >>> 10 20
+myShow();           // fail!!       >>> undefined undefined
+point.show();       // works!!      >>> 10 20
+myShow.call(point); // works!       >>> 10 20
+
+var myShowBinded = point.show.bind(point);    // binds a context, you don't need to pass it with call() or apply()
+myShowBinded();     // now it works!   >>> 10 20
