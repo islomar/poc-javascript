@@ -30,6 +30,9 @@
 
 * Invocation patterns
 
+* For the second part:
+ * JS is function scope.
+ * Explanation objects.js, line 56 >> what 'this' is bound to.
 
 ##Bibliography
 * Head First JavaScript
