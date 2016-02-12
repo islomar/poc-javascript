@@ -11,7 +11,6 @@
  */
 
 
-
 // 1.- Object literals: a pair of curly braces surrounding zero or more name/value pairs
 
 var flight = {
@@ -114,3 +113,5 @@ function Shoe(size, color) {
         this.color = newColor;
     }
 };
+var myShoe = new Shoe(42, 'red');
+console.log('My shoe color: ' + myShoe.color);
