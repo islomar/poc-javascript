@@ -42,7 +42,7 @@ console.log(flight.airline);
  * the objects that are based on that prototype.
  *
  * The prototype link is used only in retrieval. If we try to retrieve a property value from an object, and if the object lacks the property name,
- * then JS attempts to retrieve the property value from the prototype object. If it does NOT exist anywhere in the protype chain,
+ * then JS attempts to retrieve the property value from the prototype object. If it does NOT exist anywhere in the prototype chain,
  * the result is the undefined value (delegation).
  *
  */
@@ -55,6 +55,7 @@ function Bird() {
 function SyntaxBird() {
 }
 SyntaxBird.prototype = Object.create(Bird.prototype);
+SyntaxBird.prototype.xxxx = 44;
 
 var LoopLover = function (birdFood) {
     this.birdFood = birdFood;
@@ -66,6 +67,7 @@ LoopLover.prototype = Object.create(SyntaxBird.prototype);
 var loopy = new LoopLover("loops");
 
 console.log(loopy);
+console.log(loopy.xxxx);
 
 
 /**
@@ -114,4 +116,6 @@ function Shoe(size, color) {
     }
 };
 var myShoe = new Shoe(42, 'red');
+console.log('My shoe color: ' + myShoe.color);
+myShoe.changeColor("blue");
 console.log('My shoe color: ' + myShoe.color);
