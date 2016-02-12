@@ -53,6 +53,7 @@ function Bird() {
 
 // SyntaxBird Inherits From Parent Bird
 function SyntaxBird() {
+    this.xxxx = 66; // 'this' is bound to SyntaxBird object, not to LoopLover
 }
 SyntaxBird.prototype = Object.create(Bird.prototype);
 SyntaxBird.prototype.xxxx = 44;
@@ -66,8 +67,14 @@ LoopLover.prototype = Object.create(SyntaxBird.prototype);
 // bird variables below inherit from above prototype chain
 var loopy = new LoopLover("loops");
 
+console.log("loopy instanceof Bird: " + (loopy instanceof Bird));
+console.log("loopy instanceof SyntaxBird: " + (loopy instanceof SyntaxBird));
 console.log(loopy);
 console.log(loopy.xxxx);
+console.log("LoopLover.prototype: " + LoopLover.prototype);
+console.log("LoopLover.prototype: " + LoopLover.prototype);
+console.log("LoopLover.__proto__: " + LoopLover.__proto__);
+console.log("LoopLover.__proto__(): " + LoopLover.__proto__());
 
 
 /**

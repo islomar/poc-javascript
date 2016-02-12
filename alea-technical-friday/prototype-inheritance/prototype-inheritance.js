@@ -27,7 +27,7 @@ console.log(another_stooge);
 another_stooge.nickname = 'Moe';
 console.log(another_stooge);
 
-console.log(another_stooge.__proto__);
+console.log("another_stooge.__proto__: " + another_stooge.__proto__);
 console.log(another_stooge.hasOwnProperty("nickname"));
 console.log(another_stooge.hasOwnProperty("first-name"));
 console.log(another_stooge.hasOwnProperty("toString"));
