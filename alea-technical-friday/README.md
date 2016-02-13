@@ -37,6 +37,7 @@
  * IIFE
  * Module pattern
  * Invocation patterns
+ * Examples in Alea
  
 
 ##Bibliography
