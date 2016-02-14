@@ -86,3 +86,10 @@ ALEA.flight = {
 * Tricks:
  * console.time("Total time") - console.timeEnd("Total time")
  * Load JS in an async way Drive-19
+ 
+ 
+ ##Charla Borillo
+ * Object.keys(myObject) >> it returns only the properties belonging to myObject (not those on the prototype chain).
+ * let: block scope
+ * Use Bable for ES6toES5 compatibility: https://babeljs.io/
+ * caniuse.com

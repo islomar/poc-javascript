@@ -38,6 +38,8 @@
  * Module pattern
  * Invocation patterns
  * Examples in Alea
+  * class 'hide': presenters.js, views.js
+  * inheritance: XEMA.View.Base
  
 
 ##Bibliography
