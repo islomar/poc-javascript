@@ -30,6 +30,7 @@ var LEXICALLAKE = (function (answer, foundShore) {
     getFish: function(){ return fish; },
     getDepth: function(){ return depth; },
     getSleepers: function(){ return unknownSleepers; },
+    setDepth: function(newDepth) {depth=newDepth},
     awakenSleeper: function(){
       alert("Far below, in the deep, something awakens. Row faster.");
     },
@@ -56,3 +57,5 @@ console.log(LEXICALLAKE);
 
 console.log('LEXICALLAKE.depth: ' + LEXICALLAKE.depth);  // undefined >> there is no visibility
 console.log('LEXICALLAKE.getDepth(): ' + LEXICALLAKE.getDepth()); // 400
+LEXICALLAKE.setDepth(6666666);
+console.log('LEXICALLAKE.getDepth(): ' + LEXICALLAKE.getDepth()); // 6666666

@@ -43,9 +43,9 @@ var add = function (a, b) {
     return a + b;
 };
 
-//var value = 6666666666666;
+var value = 6666666666666;
 
-myObject.double = function () {
+myObject.double = function () { // Augment myObject with a double method
     var that = this; //Workaround >> 'this' is bound to myObject
 
     var helper = function () {
@@ -71,6 +71,7 @@ console.log("myObject.value after double(): " + myObject.value);
  */
 console.log("------------------Constructor invocation pattern--------------------");
 var Quo = function (string) {
+    var name = string;
     this.status = string;  // 'this' is bound to the new object (neither to the caller -method invocation- nor the the global object -function invocation)
 };
 
@@ -78,19 +79,22 @@ Quo.prototype.get_status = function () {
     return this.status;
 };
 
-var status = "you should not be reading this";
+var status = "you should not be reading this!";
 
-var myQuo = new Quo("confused"); //Functions which are intended to bused with the 'new' prefix are called constructors: capitalize names >> not recommended.
-console.log("myQuo.get_status(): " + myQuo.get_status());
+var myQuo = new Quo("confused"); //Functions which are intended to be used with the 'new' prefix are called constructors: capitalize names >> not recommended.
+//var myQuo2 = Quo("confused");
+//console.log("Quo(confused) ", myQuo2);
+//console.log("myQuo2.getStatus() ", myQuo2.get_status());
+console.log("myQuo.get_status(): " + myQuo.get_status());  // confused
 
 /**
  * Apply invocation pattern
  * ========================
- * The 'apply' method lets us construct an array of argumetns to use to invoke a function.
+ * The 'apply' method lets us construct an array of arguments to use to invoke a function.
  * It also lets us choose the value of 'this'.
  * The 'apply' method takes two parameters: the first is the value that should be bound to 'this'. The second is an array of parameters.
  */
-console.log("--------------------------------------");
+console.log("-----------------Apply invocation pattern---------------------");
 var array = [3, 4];
 var sum = add.apply(null, array); //sum is 7
 
@@ -98,21 +102,21 @@ var statusObject = {
     status: 'A-OK'
 };
 var status = Quo.prototype.get_status.apply(statusObject);
-console.log("status: " + status);
+console.log("status: " + status); // A-OK
 
 /**
  * Nested functions (review)
  */
-console.log("------------------Apply invocation pattern--------------------");
+console.log("------------------Nested functions (review)--------------------");
 var myNestedFunctionsObject = {
     func1: function () {
-        console.log(this); // logs myNestedFunctionsObject
+        console.log(this); // logs myNestedFunctionsObject, func1 is a property
         var func2 = function () {
             console.log(this); // logs window, and will do so from this point on
             var func3 = function () {
                 console.log(this); // logs window, as it's the head object
             }();
-        }();
+        }(); // IIFE
     }
 };
 myNestedFunctionsObject.func1();
@@ -131,6 +135,21 @@ var sayFoo = function () {
 };
 
 myObject.sayFoo = sayFoo;
+
+// myObject.sayFoo(); ????
+// sayFoo(); ????
+
+
+
+
+
+
+
+
+
+
+
+
 
 myObject.sayFoo();  // "I am myObject.foo"  > 'this' refers to myObject
 sayFoo();           // "foo" > 'this' refers to window
