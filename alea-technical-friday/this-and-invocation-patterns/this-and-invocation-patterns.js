@@ -17,7 +17,7 @@
  * The binding of 'this' to the object happens at invocation time.
  * Methods that get their object context from 'this' are called public methods.
  */
-console.log("--------------------------------------");
+console.log("------------------Method invocation pattern--------------------");
 var myObject = {
     value: 0,
     increment: function (inc) {
@@ -38,7 +38,7 @@ console.log("myObject.value after increment(2): " + myObject.value);
  * When a function is invoked with this pattern, 'this' is bound to the global object: this was a mistake in the design of the language.
  *
  */
-console.log("--------------------------------------");
+console.log("-------------------Function invocation pattern-------------------");
 var add = function (a, b) {
     return a + b;
 };
@@ -69,7 +69,7 @@ console.log("myObject.value after double(): " + myObject.value);
  * and 'this' will be bound to that new object.
  * The 'new' prefix also changes the behavior of the return statement.
  */
-console.log("--------------------------------------");
+console.log("------------------Constructor invocation pattern--------------------");
 var Quo = function (string) {
     this.status = string;  // 'this' is bound to the new object (neither to the caller -method invocation- nor the the global object -function invocation)
 };
@@ -103,7 +103,7 @@ console.log("status: " + status);
 /**
  * Nested functions (review)
  */
-console.log("--------------------------------------");
+console.log("------------------Apply invocation pattern--------------------");
 var myNestedFunctionsObject = {
     func1: function () {
         console.log(this); // logs myNestedFunctionsObject
@@ -120,7 +120,7 @@ myNestedFunctionsObject.func1();
 /**
  * Example with two different 'this' bindings
  */
-console.log("--------------------------------------");
+console.log("-----------------Example with two different 'this' bindings---------------------");
 var foo = 'foo';
 var myObject = {
     foo: 'I am myObject.foo'
@@ -140,7 +140,7 @@ sayFoo();           // "foo" > 'this' refers to window
  * Borillo's example
  *
  */
-console.log("--------------------------------------");
+console.log("------------------Borillo's example--------------------");
 var point = {
     x: 10,
     y: 20,

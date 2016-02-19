@@ -20,7 +20,7 @@
 var explorerAnswer = "agnostic";
 var madeItAcross = true;
 
-var LEXICALLAKE = function (answer, foundShore) {
+var LEXICALLAKE = (function (answer, foundShore) {
 
   var depth = 400;
   var fish = 1200;
@@ -50,9 +50,9 @@ var LEXICALLAKE = function (answer, foundShore) {
     }
 
   };
-}(explorerAnswer, madeItAcross);
+})(explorerAnswer, madeItAcross);
 
 console.log(LEXICALLAKE);
 
-console.log('LEXICALLAKE.depth: ' + LEXICALLAKE.depth);
-console.log('LEXICALLAKE.getDepth(): ' + LEXICALLAKE.getDepth());
+console.log('LEXICALLAKE.depth: ' + LEXICALLAKE.depth);  // undefined >> there is no visibility
+console.log('LEXICALLAKE.getDepth(): ' + LEXICALLAKE.getDepth()); // 400

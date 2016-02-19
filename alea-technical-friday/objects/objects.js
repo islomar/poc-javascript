@@ -70,7 +70,7 @@ var loopy = new LoopLover("loops");
 console.log("loopy instanceof Bird: ", loopy instanceof Bird);
 console.log("loopy instanceof SyntaxBird: " + (loopy instanceof SyntaxBird));
 console.log("loopy: " + loopy);
-console.log("loopy.age: " + loopy.age); // it looks for age in the LoopLover object and all the prototyp chain (but not in the SyntaxBird object)
+console.log("loopy.age: " + loopy.age); // it looks for age in the LoopLover object and all the prototype chain (but not in the SyntaxBird object)
 console.log("LoopLover.prototype: " + LoopLover.prototype);
 console.log("LoopLover.prototype: " + LoopLover.prototype);
 console.log("LoopLover.__proto__: " + LoopLover.__proto__);
