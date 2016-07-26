@@ -25,6 +25,7 @@ Features:
 * Use **babel** to translate to ES2015 in case it is not compatible with ES6 (Transpile ES6+ into ES5)
 * HTML replace: replace JS/CSS with the concat/minified versions
 * GZip all the static files
+* Browsersync
 
 Questions:
 * Gulp vs Grunt
