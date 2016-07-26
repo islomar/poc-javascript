@@ -8,7 +8,7 @@ gulp.task('hello', () =>
 );
 
 gulp.task('sass', function(){
-  return gulp.src('app/scss/styles.scss')
+  return gulp.src('src/scss/styles.scss')
     .pipe(sass()) // Using gulp-sass
     .pipe(gulp.dest('dist/css'));
 });
@@ -24,6 +24,6 @@ gulp.task('default', ['hello', 'sass']);
 gulp.task('deploy', ['hello', 'sass', 'compress']);
 
 gulp.task('watch', ['hello', 'sass'], () => {
-  gulp.watch('app/scss/*.scss', ['scss']);  // Keep watching for any changes in SCSS files and rerun the css task when so
-  gulp.watch('app/js/*.js', ['es6']);       // Keep Watching for any changes in JS files and rerun the es6 task when so
+  gulp.watch('src/scss/*.scss', ['scss']);  // Keep watching for any changes in SCSS files and rerun the css task when so
+  gulp.watch('src/js/*.js', ['es6']);       // Keep Watching for any changes in JS files and rerun the es6 task when so
 });

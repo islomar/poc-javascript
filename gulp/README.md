@@ -18,6 +18,7 @@ Luis de Dios (@luisddm_)
 https://github.com/luisddm
 https://www.meetup.com/es/ironhack-madrid/events/232751004
 
+Examples and slides:
 git@github.com:luisddm/gulp-examples.git
 
 Features:
