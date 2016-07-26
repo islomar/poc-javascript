@@ -22,13 +22,15 @@ git@github.com:luisddm/gulp-examples.git
 Features:
 * Concat and minify/uglify
 * Deletes jpg image info which is useless (it saves space) > imagemin()
+* Use **babel** to translate to ES2015 in case it is not compatible with ES6 (Transpile ES6+ into ES5)
+* HTML replace: replace JS/CSS with the concat/minified versions
+* GZip all the static files
 
 Questions:
 * Gulp vs Grunt
 * Test automation?
 * Typescript?
 * JSHint
-* Minimizar en Prod, pero no en Dev?
 
 
 ###Talk
