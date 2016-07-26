@@ -1,12 +1,16 @@
 {
   "name": "hello-world-gulp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hello world example for learning about Gulp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": { 
+    "name": "Isiro López",
+    "email": "islomar@gmail.com",
+    "url": "https://twitter.com/islomar"
+  },
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
