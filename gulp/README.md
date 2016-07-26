@@ -15,11 +15,12 @@ When you download a project, run `npm install`
 
 ##Meetup "Gulp Introduction"
 Luis de Dios (@luisddm_)
-https://github.com/luisddm
-https://www.meetup.com/es/ironhack-madrid/events/232751004
+
+* https://github.com/luisddm
+* https://www.meetup.com/es/ironhack-madrid/events/232751004
 
 Examples and slides:
-git@github.com:luisddm/gulp-examples.git
+https://github.com/luisddm/gulp-examples
 
 Features:
 * Concat and minify/uglify
@@ -28,12 +29,13 @@ Features:
 * HTML replace: replace JS/CSS with the concat/minified versions
 * GZip all the static files
 * Browsersync (browser gets refreshed automatically - it uses WebSocket)
+* sourcemaps: en el caso de que cambies los nombres de variables/métodos en JS o hagas cualquier otro caso, así podrías relacionar el real con el "oculto" y en el navegador poder debuggear bien.
 
 Questions:
 * Gulp vs Grunt
-* Test automation?
-* Typescript?
-* JSHint
+* Test automation? => YES
+* Typescript? => there is something similar to babel()
+* JSHint => YES
 
 
 ###Talk
@@ -50,6 +52,9 @@ A JS platform built on top of Google Chrome's JS runtime engine, V8.
   * .pipe()
   * .watch()
   * .dest()
+
+* Gulp plugins: http://gulpjs.com/plugins/
+
 
 ##Interesting links
 http://gulpjs.com/
