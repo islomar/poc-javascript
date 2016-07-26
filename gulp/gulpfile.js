@@ -10,3 +10,5 @@ gulp.task('sass', function(){
     .pipe(sass()) // Using gulp-sass
     .pipe(gulp.dest('dist/css'));
 });
+
+gulp.task('default', ['hello', 'sass']);
