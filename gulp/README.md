@@ -2,6 +2,7 @@
 
 ##How to create a Gulp project
 Steps:
+
 1. `sudo npm install gulp -g`
 2. Create a folder for your project
 3. Inside the folder, run `npm init`
@@ -25,7 +26,7 @@ Features:
 * Use **babel** to translate to ES2015 in case it is not compatible with ES6 (Transpile ES6+ into ES5)
 * HTML replace: replace JS/CSS with the concat/minified versions
 * GZip all the static files
-* Browsersync
+* Browsersync (browser gets refreshed automatically - it uses WebSocket)
 
 Questions:
 * Gulp vs Grunt
