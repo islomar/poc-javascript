@@ -10,17 +10,26 @@ Steps:
 6. Run `gulp <taskName>`
 7. `npm install gulp-sass --save-dev`
 
+When you download a project, run `npm install`
+
 ##Meetup "Gulp Introduction"
 Luis de Dios (@luisddm_)
+https://github.com/luisddm
 https://www.meetup.com/es/ironhack-madrid/events/232751004
 
+git@github.com:luisddm/gulp-examples.git
 
+Features:
+* Concat and minify/uglify
+* Deletes jpg image info which is useless (it saves space) > imagemin()
+
+Questions:
 * Gulp vs Grunt
 * Test automation?
-* Minimize?
 * Typescript?
 * JSHint
 * Minimizar en Prod, pero no en Dev?
+
 
 ###Talk
 * **What is Node.js?**

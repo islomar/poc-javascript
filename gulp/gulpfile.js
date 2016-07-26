@@ -8,5 +8,5 @@ gulp.task('hello', function() {
 gulp.task('sass', function(){
   return gulp.src('app/scss/styles.scss')
     .pipe(sass()) // Using gulp-sass
-    .pipe(gulp.dest('app/css'));
+    .pipe(gulp.dest('dist/css'));
 });
