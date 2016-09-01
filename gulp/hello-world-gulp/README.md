@@ -10,6 +10,7 @@ Steps:
 5. Create a gulpfile.js
 6. Run `gulp <taskName>`
 7. `npm install gulp-sass --save-dev`
+8. In order to install ALL the development dependencies: `npm install --save-dev`
 
 When you download a project, run `npm install`
 
@@ -57,5 +58,5 @@ A JS platform built on top of Google Chrome's JS runtime engine, V8.
 
 
 ##Interesting links
-http://gulpjs.com/
-https://css-tricks.com/gulp-for-beginners/
+* http://gulpjs.com/
+* https://css-tricks.com/gulp-for-beginners/
