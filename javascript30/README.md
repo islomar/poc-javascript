@@ -16,3 +16,6 @@ Behind the scenes: https://www.youtube.com/watch?v=4CS436KZ35A
 
 ##Day 2: CSS + JS Clock
 TBD
+
+##Day 3: Playing with CSS Variables and JS
+TBD
