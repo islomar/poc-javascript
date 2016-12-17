@@ -15,7 +15,8 @@ Behind the scenes: https://www.youtube.com/watch?v=4CS436KZ35A
 * Element 'kbd': https://developer.mozilla.org/es/docs/Web/HTML/Elemento/kbd
 
 ##Day 2: CSS + JS Clock
-TBD
+Based on things like *transition-timing-function*, *transform*, *transition* and *setInterval()*
 
 ##Day 3: Playing with CSS Variables and JS
-TBD
+* An Array has a lots of functions to apply (e.g. revert, reduce, etc.), while a List is much more simple what you can do.
+* dataset: object which contains all the data attributes of an element.
