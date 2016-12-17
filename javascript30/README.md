@@ -17,6 +17,11 @@ Behind the scenes: https://www.youtube.com/watch?v=4CS436KZ35A
 ##Day 2: CSS + JS Clock
 Based on things like *transition-timing-function*, *transform*, *transition* and *setInterval()*
 
-##Day 3: Playing with CSS Variables and JS
+##Day 3: CSS Variables
 * An Array has a lots of functions to apply (e.g. revert, reduce, etc.), while a List is much more simple what you can do.
 * dataset: object which contains all the data attributes of an element.
+* Definition of CSS variables.
+* How to change those CSS variables.
+
+##Day 4: Array Cardio Day 1
+TBD
