@@ -7,7 +7,42 @@ http://wesbos.com/
 Source code:
 https://github.com/wesbos/JavaScript30
 
-Behind the scenes: https://www.youtube.com/watch?v=4CS436KZ35A
+##Behind the scenes
+https://www.youtube.com/watch?v=4CS436KZ35A
+
+* **Backend**
+  * Express
+  * Passport JS to manage logins
+  * MongoDB to store the data
+  * Mongoose
+  * Mongohub to host the database
+
+Async + Promises to handle control flow
+
+* Servers
+  * nginx
+  * ssls.com for certs
+  * Digital Ocen for the server
+  * forever to keep things running (like a monit?)
+
+* Others
+  * Stripe for credit cards
+  * Paypal for Paypal
+  * Pushover for notifications
+
+* Frontend
+  * Stylus (similar to Sass or Less)
+  * jQuery
+  * React for the player, HTML5 video player
+  * JS on the Frontend
+  * Stylus to write CSS - experimenting with BEM
+
+* Email:
+  * Jade -> HTML
+  * Inky (from foundation) to make Email easy
+  * Juice to inline CSS
+  * Node Mailes + Postmark to send emails
+
 
 
 ##Day 1: JavaScript Drum Kit
