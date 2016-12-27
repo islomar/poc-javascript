@@ -59,4 +59,5 @@ Based on things like *transition-timing-function*, *transform*, *transition* and
 * How to change those CSS variables.
 
 ##Day 4: Array Cardio Day 1
-TBD
+* Examples about filter, map, reduce, sort.
+* Lists vs Arrays.
