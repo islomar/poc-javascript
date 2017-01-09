@@ -64,3 +64,6 @@ Based on things like *transition-timing-function*, *transform*, *transition* and
 
 ##Day 5: Flex Panel Gallery
 * http://flexbox.io/
+
+##Day 6; Type Ahead
+TBD
