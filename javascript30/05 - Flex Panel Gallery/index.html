@@ -24,6 +24,7 @@
     .panels {
       min-height:100vh;
       overflow: hidden;
+      display: flex; /* Convert .panels in a flex container */
     }
 
     .panel {
@@ -41,6 +42,11 @@
       font-size: 20px;
       background-size:cover;
       background-position:center;
+      flex: 1; /* Each panel will evenly distribute the extra space in between them */
+      justify-content: center;
+      align-items: center;
+      display: flex; /* Convert .panel in a flex container; it is then both a flex item AND a flex container */
+      flex-direction: column; /* Because by default the flex direction is left to right */
     }
 
 
@@ -50,11 +56,22 @@
     .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
     .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
 
+    /* Flex Items */
     .panel > * {
       margin:0;
       width: 100%;
       transition:transform 0.5s;
+      border: 1px solid red;
+      flex: 1 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
+    .panel > *:first-child { transform: translateY(-100%); }
+    .panel.open-active > *:first-child { transform: translateY(0); }
+    .panel > *:last-child { transform: translateY(+100%); }
+    .panel.open-active > *:last-child { transform: translateY(0); }
 
     .panel p {
       text-transform: uppercase;
@@ -68,6 +85,7 @@
 
     .panel.open {
       font-size:40px;
+      flex: 5; /* It will take 5 times the amount of extra room than the rest of them */
     }
 
     .cta {
@@ -107,7 +125,20 @@
   </div>
 
   <script>
+    const panels = document.querySelectorAll('.panel');
 
+    function toggleOpen() {
+      this.classList.toggle('open');
+    }
+
+    function toggleActive(e) {
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+      }
+    }
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
   </script>
 
 
