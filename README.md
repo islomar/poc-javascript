@@ -7,6 +7,10 @@ Playground for JavaScript
 ##My notes
 [https://docs.google.com/document/d/1h-9INBkcZ1GGaDs5x3_XTXGWIq7cKWMPMdjgU6UD_Eo/edit](https://docs.google.com/document/d/1h-9INBkcZ1GGaDs5x3_XTXGWIq7cKWMPMdjgU6UD_Eo/edit)
 
+##Interesting links
+* [Great video with a visual and practical explanation about objects and prototypes](http://www.objectplayground.com/)
+* [JavaScript para el desarrollo de videojuegos](https://mozdevs.github.io/js-for-gamedev/es/)
+
 ###How to create an object
 1. Object literal
 		`var myBox = { height: 6, width: 10, material: “cardboard”, contents: bookArray};`
