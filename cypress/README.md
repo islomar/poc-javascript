@@ -21,6 +21,7 @@
 * Most testing tools (like Selenium) operate by running outside of the browser and executing remote commands across the network. Cypress is the exact opposite. Cypress is executed in the same run loop as your application.
 * Because Cypress operates within your application, that means it has native access to every single object.
 * It usese **Mocha** and **Chai**.
+* Use ESLint: https://github.com/cypress-io/eslint-plugin-cypress
 
 
 ## How to run Cypress

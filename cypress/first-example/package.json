@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "lint": "eslint --max-warnings=0 \"cypress/**/*.js*\" "
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^4.8.0"
+    "cypress": "^4.8.0",
+    "eslint": "^7.2.0"
   }
 }
