@@ -1,6 +1,6 @@
 # Playground for Cypress
-* https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell
-
+* https://docs.cypress.io
+* https://github.com/cypress-io/cypress
 
 ## Training
 * https://docs.cypress.io/examples/media/courses-media.html
@@ -20,6 +20,10 @@
     * Cross browser Testing
 * Most testing tools (like Selenium) operate by running outside of the browser and executing remote commands across the network. Cypress is the exact opposite. Cypress is executed in the same run loop as your application.
 * Because Cypress operates within your application, that means it has native access to every single object.
+* It usese **Mocha** and **Chai**.
+
 
 ## How to run Cypress
-`npx cypress open`
+* `npx cypress open`
+* `$(npm bin)/cypress open`
+* `npm run cypress:open`
