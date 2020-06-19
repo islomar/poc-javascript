@@ -22,6 +22,10 @@
 * Because Cypress operates within your application, that means it has native access to every single object.
 * It usese **Mocha** and **Chai**.
 * Use ESLint: https://github.com/cypress-io/eslint-plugin-cypress
+* Cypress automatically detects things like a page transition event and **will automatically halt running commands until the next page has finished loading**.
+* Cypress waits 4 seconds before timing out finding a DOM element.
+* When a command causes an immediate visual change in our application, cycling between before and after will update our snapshot.
+* Page events: e.g. (PAGE LOAD), (NEW URL), form submissions, etc.
 
 
 ## How to run Cypress
@@ -29,5 +33,12 @@
 * `$(npm bin)/cypress open`
 * `npm run cypress:open`
 
+
 ## Bookmark
 * https://docs.cypress.io/guides/getting-started/testing-your-app.html#Step-1-Start-your-server
+
+
+## Interesting links
+* [Brian Mann – I see your point, but… (Part 1)](https://www.youtube.com/watch?time_continue=19&v=5XQOK0v_YRE&feature=emb_logo)
+* [Gleb Bahmutov – I see your point, but… (Part 2)](https://www.youtube.com/watch?v=5FnalKRjpZk)
+* [React example projects](https://reactjs.org/community/examples.html)
