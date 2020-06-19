@@ -40,5 +40,7 @@
 
 ## Interesting links
 * [Brian Mann – I see your point, but… (Part 1)](https://www.youtube.com/watch?time_continue=19&v=5XQOK0v_YRE&feature=emb_logo)
+    * https://demo.realworld.io/#/
+    * https://github.com/gothinkster/react-redux-realworld-example-app
 * [Gleb Bahmutov – I see your point, but… (Part 2)](https://www.youtube.com/watch?v=5FnalKRjpZk)
 * [React example projects](https://reactjs.org/community/examples.html)
