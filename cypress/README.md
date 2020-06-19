@@ -28,3 +28,6 @@
 * `npx cypress open`
 * `$(npm bin)/cypress open`
 * `npm run cypress:open`
+
+## Bookmark
+* https://docs.cypress.io/guides/getting-started/testing-your-app.html#Step-1-Start-your-server
