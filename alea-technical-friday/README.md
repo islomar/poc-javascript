@@ -1,10 +1,10 @@
-#Alea's technical Friday: JavaScript
+# Alea's technical Friday: JavaScript
 
-##Slides
+## Slides
 [JavaScript, qué hermoso eres](https://docs.google.com/presentation/d/1ffsKWM-xc0-emQtkBBx_OkESkDj43L4b3q-pr1rnP4Y/edit#slide=id.p)
 
 
-##Summary
+## Summary
 * Hide and show elements
 
 * Hoisting (elevar, alzar, levantar):
@@ -42,11 +42,11 @@
   * inheritance: XEMA.View.Base
  
 
-##Bibliography
+## Bibliography
 * Head First JavaScript
 * JavaScript: The Good Parts (Doublas Crockford)
 * JavaScript Enlightenment (Cody Lindley)
 
 
-##Training
+## Training
 Code School: JavaScript Path
